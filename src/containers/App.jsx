@@ -1,8 +1,9 @@
 import React from 'react';
-import Welcome from '../components/Welcome';
 
 const App = () => {
-   return <Welcome />
+   return(
+      <h1>hola soy App</h1>
+   )
 };
 
 export default App;
