@@ -19,9 +19,9 @@ const Header = () => {
                <ul>
                   <li className="header__menu-item">Contacto</li>
                   <li className="header__menu-item">
-                     <p>
+                     
                         Registrate   
-                     </p>
+                     
                      <img src={user} alt=""/>
                   </li>
                   <li className="header__menu-item"><img src={search} alt=""/></li>
