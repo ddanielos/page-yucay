@@ -12,20 +12,26 @@ const Header = () => {
             <div className="u-wrapper">
                <nav className="menu">
                   <div className="u-wrapper">
-                     <ul className="menu-left">
-                        <li className="menu-item">Nuestras Cervezas</li>
-                        <li className="menu-item">Sobre Nosotros</li>
-                        <li className="menu-item">Blog</li>
-                     </ul>
-                     <img className="menu-logo" src={logo} alt="logo yucay brewery" />
-                     <ul className="menu-right">
-                        <li className="menu-item">Contacto</li>
-                        <li className="menu-item">
-                              Registrate   
-                           <img className="menu-item__icon" src={user} alt=""/>
-                        </li>
-                        <li className="menu-item"><img className="menu-item__icon" src={sale} alt=""/></li>
-                     </ul>
+                     <div className="container-left">
+                        <ul className="menu-left">
+                           <li className="menu-item">Nuestras Cervezas</li>
+                           <li className="menu-item">Sobre Nosotros</li>
+                        </ul>
+                     </div>
+                     <div className="container-center">
+                        <img className="menu-logo" src={logo} alt="logo yucay brewery" />
+                     </div>
+                     <div className="container-right">
+                        <ul className="menu-right">
+                           <li className="menu-item">Blog</li>
+                           <li className="menu-item">Contacto</li>
+                           <li className="menu-item">
+                                 Registrate   
+                              <img className="menu-item__icon" src={user} alt=""/>
+                           </li>
+                           <li className="menu-item"><img className="menu-item__icon" src={sale} alt=""/></li>
+                        </ul>
+                     </div>
                   </div>
                </nav>
             </div>

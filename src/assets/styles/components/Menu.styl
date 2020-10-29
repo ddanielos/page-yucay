@@ -1,3 +1,14 @@
+.u-wrapper
+   display: flex
+.container-left
+   width: menu_width
+.container-right
+   width: menu_width
+.container-center
+   width logo_width
+   height 126px
+   display flex
+   align-items center
 .menu
    visibility visible
    position initial
@@ -12,9 +23,13 @@
    & ul
       list-style none
       display inline-block
-      margin auto   
+      margin auto
+      padding 0   
    &-item
-      padding 1.5em
+      padding-top 1.5em
+      padding-bottom 1.5em
+      padding-left: 1.5em
+      padding-right: 1.5em
       height 73px
       line-height 4.38
       color #2d292b
@@ -30,12 +45,11 @@
          display inline-block
          vertical-align middle
    &-logo 
-      padding-top 20px
-      padding-left 40px
       width 141px
       height auto
-
-@media (max-width: 1500px)
+      display: block
+      margin: auto
+@media (max-width: 1594px)
    .menu
       visibility visible
       opacity 1
@@ -44,14 +58,15 @@
       mixin-menu(size_menu_1360)
       .menu-logo
          width 115px
-         padding-top 5px
-         padding-left 20px
-         padding-bottom: 20px
       .menu-item 
+         padding-left: 1.5em
+         padding-right: 1.5em
          img
             width 25px
+   .container-center
+      height 106px
 
-@media (max-width: 1230px)
+@media (max-width: 1334px)
    .menu
       visibility visible
       opacity 1
@@ -60,13 +75,14 @@
       mixin-menu(size_menu_1024)
       .menu-logo
          width 95px
-         padding-top 5px
-         padding-left 20px
-         padding-bottom: 30px
       .menu-item 
          padding-left: 1.2em
+         padding-right: 1.2em
          img
             width 22px
+   .container-center
+      width logo_width_s
+      height 106px
 
 @media (max-width: 1023px)
    .menu
@@ -74,7 +90,8 @@
       &-right
          visibility hidden
          position absolute
-      .menu-logo
-         padding-top 20px
-         padding-bottom 0px 
+   .container-center
+      height 106px
+
+
    
