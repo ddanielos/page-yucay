@@ -1,0 +1,80 @@
+.menu
+   visibility visible
+   position initial
+   opacity 1
+   left 0
+   right 0
+   text-align center
+   mixin-menu(size_menu_1920)
+   &-left
+   &-right
+      visibility visible
+   & ul
+      list-style none
+      display inline-block
+      margin auto   
+   &-item
+      padding 1.5em
+      height 73px
+      line-height 4.38
+      color #2d292b
+      float left
+      img
+         width 31px
+         height auto
+         padding-left  7px
+         padding-bottom 5px
+         display inline-block
+         vertical-align middle
+      p
+         display inline-block
+         vertical-align middle
+   &-logo 
+      padding-top 20px
+      padding-left 40px
+      width 141px
+      height auto
+
+@media (max-width: 1500px)
+   .menu
+      visibility visible
+      opacity 1
+      position: initial
+      height auto
+      mixin-menu(size_menu_1360)
+      .menu-logo
+         width 115px
+         padding-top 5px
+         padding-left 20px
+         padding-bottom: 20px
+      .menu-item 
+         img
+            width 25px
+
+@media (max-width: 1230px)
+   .menu
+      visibility visible
+      opacity 1
+      position: initial
+      height auto
+      mixin-menu(size_menu_1024)
+      .menu-logo
+         width 95px
+         padding-top 5px
+         padding-left 20px
+         padding-bottom: 30px
+      .menu-item 
+         padding-left: 1.2em
+         img
+            width 22px
+
+@media (max-width: 1023px)
+   .menu
+      &-left 
+      &-right
+         visibility hidden
+         position absolute
+      .menu-logo
+         padding-top 20px
+         padding-bottom 0px 
+   

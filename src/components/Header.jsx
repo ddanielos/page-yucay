@@ -9,25 +9,26 @@ const Header = () => {
    return(
       <div>
          <header className="header">
-            <nav className="header__menu">
-               <ul>
-                  <li className="header__menu-item">Nuestras Cervezas</li>
-                  <li className="header__menu-item">Sobre Nosotros</li>
-                  <li className="header__menu-item">Blog</li>
-               </ul>
-               <img className="header__menu-logo" src={logo} alt="logo yucay brewery" />
-               <ul>
-                  <li className="header__menu-item">Contacto</li>
-                  <li className="header__menu-item">
-                     
-                        Registrate   
-                     
-                     <img src={user} alt=""/>
-                  </li>
-                  <li className="header__menu-item"><img src={search} alt=""/></li>
-                  <li className="header__menu-item"><img src={sale} alt=""/></li>
-               </ul>
-            </nav>
+            <div className="u-wrapper">
+               <nav className="menu">
+                  <div className="u-wrapper">
+                     <ul className="menu-left">
+                        <li className="menu-item">Nuestras Cervezas</li>
+                        <li className="menu-item">Sobre Nosotros</li>
+                        <li className="menu-item">Blog</li>
+                     </ul>
+                     <img className="menu-logo" src={logo} alt="logo yucay brewery" />
+                     <ul className="menu-right">
+                        <li className="menu-item">Contacto</li>
+                        <li className="menu-item">
+                              Registrate   
+                           <img className="menu-item__icon" src={user} alt=""/>
+                        </li>
+                        <li className="menu-item"><img className="menu-item__icon" src={sale} alt=""/></li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
          </header>
       </div>
    )
