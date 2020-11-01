@@ -1,0 +1,33 @@
+.hero
+   &__background-device
+      visibility hidden
+   &__background
+      position absolute
+      max-width 100%
+      height auto
+      z-index 1
+   &__title
+      position absolute
+      padding-top 15%
+      padding-left 41%
+      max-width 17.4%vw
+      // object-fit contain
+      z-index 2
+   @media (max-width: 1023px)
+      position absolute
+      width: 100%
+      &__background
+         visibility hidden
+      &__background-device
+         height 640px
+         visibility visible
+         background-position center top
+         background-size percentage(4)
+         &:before
+            content ''
+            position absolute
+            top 0
+            bottom 0
+            left 0
+            right 0
+            background-color rgba(0,0,0,0.5)

@@ -2,14 +2,18 @@ import React from 'react';
 import logo from '../assets/static/img/logo.png';
 import user from '../assets/static/img/user.png';
 import sale from '../assets/static/img/sale.png';
-import search from '../assets/static/img/search.png';
+import icon_ham from '../assets/static/img/beer.png';
+import sale_white from '../assets/static/img/sale_white.png'
 import '../assets/styles/styles.styl';
 
 const Header = () => {
    return(
-      <div>
+      <div className="container-header">
+         {/* <input type="checkbox" id="open" className="menu-checkbox" /> */}
          <header className="header">
-            <div className="u-wrapper">
+            {/* <div className="u-wrapper "> */}
+               <label className="menu-open" style={{backgroundImage:`url(${icon_ham})`}}></label>
+               <label className="sale_white" style={{backgroundImage:`url(${sale_white})`}}></label>
                <nav className="menu">
                   <div className="u-wrapper">
                      <div className="container-left">
@@ -34,7 +38,7 @@ const Header = () => {
                      </div>
                   </div>
                </nav>
-            </div>
+            {/* </div> */}
          </header>
       </div>
    )

@@ -1,4 +1,5 @@
 .u-wrapper
+   width: 100%
    display: flex
 .container-left
    width: menu_width
@@ -26,12 +27,14 @@
       margin auto
       padding 0   
    &-item
-      padding-top 1.5em
-      padding-bottom 1.5em
+      margin-top: 2em
+      // padding-top 1.5em
+      // padding-bottom 1.5em
       padding-left: 1.5em
       padding-right: 1.5em
-      height 73px
-      line-height 4.38
+      height 31px
+      // line-height 4.38
+      line-height: 2
       color #2d292b
       float left
       img
@@ -49,6 +52,10 @@
       height auto
       display: block
       margin: auto
+.menu-item:hover
+   text-shadow 0px 0px 3px #bbb7ac
+   cursor pointer
+
 @media (max-width: 1594px)
    .menu
       visibility visible
@@ -76,6 +83,7 @@
       .menu-logo
          width 95px
       .menu-item 
+         margin-top 2.7em
          padding-left: 1.2em
          padding-right: 1.2em
          img
@@ -84,14 +92,40 @@
       width logo_width_s
       height 106px
 
-@media (max-width: 1023px)
+@media (max-width: 1023px)   
    .menu
       &-left 
       &-right
          visibility hidden
          position absolute
+      position absolute
+      z-index 3
+      .menu-logo
+         filter hue-rotate(435deg) brightness(1390%)
+         width 100%
+   .menu-open
+      margin-top 15px
+      margin-left 15px
+      user-select: none
+      width 30px
+      height 40px
+      display: inline-flex
+      cursor: pointer
+      background-size cover
+      position: absolute
+      z-index 4
+   .sale_white
+      margin-top 13px
+      margin-left calc(100vw - 50px)
+      user-select none
+      width 30px
+      height 40px
+      display inline-block
+      cursor pointer
+      background-size percentage(1)
+      background-repeat no-repeat
+      position absolute
+      z-index 4
    .container-center
-      height 106px
-
-
-   
+      padding-top 140px
+      width 250px
