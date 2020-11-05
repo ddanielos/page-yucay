@@ -1,15 +1,13 @@
-.u-wrapper
-   width: 100%
-   display: flex
 .container-left
    width: menu_width
 .container-right
    width: menu_width
 .container-center
-   width logo_width
-   height 126px
-   display flex
-   align-items center
+   margin-left auto
+   margin-right auto
+.container-header
+   position fixed
+   z-index 5
 .menu
    visibility visible
    position initial
@@ -27,13 +25,9 @@
       margin auto
       padding 0   
    &-item
-      margin-top: 2em
-      // padding-top 1.5em
-      // padding-bottom 1.5em
       padding-left: 1.5em
       padding-right: 1.5em
       height 31px
-      // line-height 4.38
       line-height: 2
       color #2d292b
       float left
@@ -70,8 +64,6 @@
          padding-right: 1.5em
          img
             width 25px
-   .container-center
-      height 106px
 
 @media (max-width: 1334px)
    .menu
@@ -83,26 +75,19 @@
       .menu-logo
          width 95px
       .menu-item 
-         margin-top 2.7em
          padding-left: 1.2em
          padding-right: 1.2em
          img
             width 22px
-   .container-center
-      width logo_width_s
-      height 106px
 
 @media (max-width: 1023px)   
    .menu
       &-left 
       &-right
          visibility hidden
-         position absolute
-      position absolute
-      z-index 3
       .menu-logo
-         filter hue-rotate(435deg) brightness(1390%)
-         width 100%
+         visibility hidden
+      height 72px
    .menu-open
       margin-top 15px
       margin-left 15px
@@ -129,3 +114,8 @@
    .container-center
       padding-top 140px
       width 250px
+   .container-left
+   .container-right
+      visibility hidden
+   .u-wrapper
+      visibility hidden
