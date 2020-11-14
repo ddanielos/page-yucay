@@ -12,6 +12,8 @@ const Hero = () => {
             {/* <img className="hero__background" src={ background } alt="Fabrica Yucay Brewery"/> */}
             <div className="hero__background" style={{backgroundImage:`url(${background})`}}>
                <img className="hero__title" src={ title } alt="Cerveceria artesanal"/>
+               <h2 className="hero__slogan">De nuestra tierra a tu casa</h2>
+               <div className="hero__border"></div>
             </div>
             <div className="hero__background-device" style={{backgroundImage:`url(${background})`}}>
                <img className="hero__logo" src={ logo } alt="Cerveceria artesanal"/>
