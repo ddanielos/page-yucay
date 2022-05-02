@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/static/img/logo.png';
 import user from '../assets/static/img/user.png';
 import sale from '../assets/static/img/sale.png';
@@ -18,19 +19,27 @@ const Header = () => {
                   <div className="u-wrapper">
                      <div className="container-left">
                         <ul className="menu-left">
-                           <li className="menu-item">Nuestras Cervezas</li>
+                           <Link to="/beers">
+                              <li className="menu-item">Nuestras Cervezas</li>
+                           </Link>
                            <li className="menu-item">Sobre Nosotros</li>
                         </ul>
                      </div>
-                     <div className="container-center">
-                        <img className="menu-logo" src={logo} alt="logo yucay brewery" />
-                     </div>
+                     <Link to="/">
+                        <div className="container-center">
+                           <img className="menu-logo" src={logo} alt="logo yucay brewery" />
+                        </div>
+                     </Link>
                      <div className="container-right">
                         <ul className="menu-right">
-                           <li className="menu-item">Blog</li>
+                           <Link to="/blog">
+                              <li className="menu-item">
+                                 Blog
+                              </li>
+                           </Link>
                            <li className="menu-item">Contacto</li>
                            <li className="menu-item">
-                                 Registrate   
+                                 Login   
                               <img className="menu-item__icon" src={user} alt=""/>
                            </li>
                            <li className="menu-item"><img className="menu-item__icon" src={sale} alt=""/></li>
