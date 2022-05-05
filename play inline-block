@@ -1,0 +1,29 @@
+[33mcommit a62ad457e20b846ec5f6ab604e81ac406fa36c0c[m[33m ([m[1;36mHEAD -> [m[1;32mdevelopment[m[33m, [m[1;31morigin/development[m[33m)[m
+Author: ddanielos <dany.oblitas1984@gmail.com>
+Date:   Wed Oct 28 23:52:06 2020 -0500
+
+    menu responsivo estatico alineado
+
+[33mcommit b1303903b93d024620e8f7b40ff9259d3f6d5f20[m
+Author: ddanielos <dany.oblitas1984@gmail.com>
+Date:   Wed Oct 28 20:28:47 2020 -0500
+
+    menu responsivo estatico sin alinear
+
+[33mcommit ebe923e97fd2f9f423f842ba3bfad987b2715db0[m
+Author: ddanielos <dany.oblitas1984@gmail.com>
+Date:   Tue Oct 27 11:29:33 2020 -0500
+
+    menu sin responsive
+
+[33mcommit 5708ad4fcfcc580727a37931b53932cfe1f96e1f[m
+Author: ddanielos <dany.oblitas1984@gmail.com>
+Date:   Mon Oct 26 20:30:12 2020 -0500
+
+    antes de instalar react-router-dom
+
+[33mcommit e4208b081c6d6efe586d9910b43d39d03747da33[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: ddanielos <dany.oblitas1984@gmail.com>
+Date:   Mon Oct 26 12:37:09 2020 -0500
+
+    primer commit plantilla
