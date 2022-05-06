@@ -1,8 +1,9 @@
 import React from 'react'
+import '../assets/styles/styles.styl'
 
 const ListOfBlogs = ({children}) => {
     return(
-        <div>
+        <div className="list-of-blogs">
             {children}
         </div>
 

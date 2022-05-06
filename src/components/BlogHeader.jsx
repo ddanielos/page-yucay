@@ -8,10 +8,10 @@ const BlogHeader = () => {
             <section className="blog-upper"></section>
             <section className="blog-header-container">
                 <div className="blog-title-container">
+                    <img src={Hero} alt="" />
                     <h1 className="blog-header__title">Blog cervecero</h1>
                 </div>
                 <div>
-                    <img src={Hero} alt="" />
                 </div>
 
             </section>
