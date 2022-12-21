@@ -5,6 +5,9 @@ import Banner from '../components/Banner';
 import Bar from '../components/Bar';
 import Instagram from '../components/Instagram';
 import Modal from '../components/Modal';
+import About from '../components/About';
+import OurBlog from '../components/OurBlog';
+import Footer from '../components/Footer';
 
 const Home = () => {
    const [modalOpen, setModalOpen] = useState(false);
@@ -36,10 +39,10 @@ const Home = () => {
          <Bar />
          {modalOpen && <Modal imageInstaURL={imageInstaURL} imageInstaCaption={imageInstaCaption} typeInsta={typeInsta} closeModal={closeModal}/>}
          <Instagram openModal={openModal}/>
+         <About />
+         <OurBlog />
+         <Footer />
          {/*
-            <About />
-            <OurBlog />
-            <Footer />
          */}
       </div>
    )
