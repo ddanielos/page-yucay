@@ -15,7 +15,6 @@ const Home = () => {
    const [imageInstaCaption, setImageInstaCaption] = useState(false);
    const [typeInsta, setTypeInsta] = useState(false);
 
-
    const openModal = (caption, media_url, type) => {
       setImageInstaURL(media_url);
       setImageInstaCaption(caption);
@@ -42,8 +41,6 @@ const Home = () => {
          <About />
          <OurBlog />
          <Footer />
-         {/*
-         */}
       </div>
    )
 }

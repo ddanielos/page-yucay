@@ -37,7 +37,7 @@ const Header = () => {
                                  Blog
                               </li>
                            </Link>
-                           <li className="menu-item">Contacto</li>
+                           <Link to="/contact"><li className="menu-item">Contacto</li></Link>
                            <li className="menu-item">
                                  Login   
                               <img className="menu-item__icon" src={user} alt=""/>

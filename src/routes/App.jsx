@@ -7,7 +7,8 @@ import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
 import useInitialState from '../hooks/useInitialState';
 
-const API = 'https://d5ma95tc10.execute-api.sa-east-1.amazonaws.com/beers'
+//const API = 'https://d5ma95tc10.execute-api.sa-east-1.amazonaws.com/beers'
+const API = process.env.API_URL;
 
 const App = () => {
    const initialState = useInitialState(API);

@@ -8,13 +8,8 @@ const Beers = (props) => {
     let count = 0;
     return(
         <ListOfBeers>
-            {/* {props.beers?.length > 0 &&
-                
-                props.beers?.map( item => 
-                    <BeerItem key={item.id} {...item}/>
-                )
-            }   */}
-            {   
+            {/*
+            {
                 props.beers?.length > 0 &&
                     props.beers?.map( item => {
                         count = count +1
@@ -22,6 +17,16 @@ const Beers = (props) => {
                             <BeerItem key={item.id} {...item} count={count} />
                             )
                     })
+            }
+            */}
+            {
+                props.data?.length > 0 &&
+                props.data?.map( item => {
+                    count = count +1
+                    return (
+                        <BeerItem key={item.id} {...item} count={count} />
+                        )
+                })
             }
         </ListOfBeers>
     )
