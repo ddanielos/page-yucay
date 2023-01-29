@@ -4,7 +4,6 @@ import ListOfBlogs from './ListOfBlogs'
 import BlogItem from './BlogItem'
 import styled from 'styled-components'
 import {color_terciario, color_cuaternario, Fuente2, color_principal, color_secundario, Fuente1} from '../assets/styles/lib/Variables';
-import data_blogs from './data.json';
 
 const ImageFlor = styled.img`
 
@@ -34,12 +33,13 @@ const AboutContent = styled.div`
 
   `
 
-const OurBlog = () => {
-  const data = data_blogs;
+const OurBlog = (props) => {
+  const reverseBlogs = props.data?.slice().reverse();
+  const data = reverseBlogs;
   let datos = [];
-  data.map(({ id }) => {
-    datos.push(id);
-    if(datos[3]){datos.splice(3,1)};
+  data?.map(( item ) => {
+    datos.push(item);
+    if(datos[screen.width<601?2:3]){datos.splice(screen.width<601?2:3,1)};
   })
   return(
     <>
@@ -50,25 +50,18 @@ const OurBlog = () => {
       </AboutTitle>
       <AboutContent>
         <ListOfBlogs>
-          {
-            datos.map((id)=>{
-              //const blog = datos[id]
-              //const idMedia = blog.featured_media
-              //const media = state.source.attachment[idMedia]
+        {
+            datos.map(item =>{
               return(
                 <BlogItem
-                  key={id}
-                  title={datos.title}
-                  description={datos.excerpt}
-                  //cover={datos.media&&media.source_url}
-                  link={datos.link}
+                  key={item.id}
+                  {...item}
                 />
               )
             })
           }
         </ListOfBlogs>
       </AboutContent>
-
     </>
   )
 }

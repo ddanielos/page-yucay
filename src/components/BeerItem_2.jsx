@@ -15,7 +15,7 @@ const BeerItem = (props) => {
                     Dorada / Suave / Fresca / Frutada
                 </p>
                 <div className="beer__description">
-                    Existen muchas cervezas doradas y refrescantes. Pero frutadas y con destellos finales de lúpulo, sólo hay un estilo: la Kölsch. En Antares rescatamos la antigua receta de la cerveza favorita de los bebedores en colonia, Alemania, y la honramos desde 1998. En nuestra cocina, su legado sigue intacto.
+                    Existen muchas cervezas doradas y refrescajhkhkhhkhkntes. Pero frutadas y con destellos finales de lúpulo, sólo hay un estilo: la Kölsch. En Antares rescatamos la antigua receta de la cerveza favorita de los bebedores en colonia, Alemania, y la honramos desde 1998. En nuestra cocina, su legado sigue intacto.
                 </div>
                 <ul className="beer__properties-bottom">
                     <li>

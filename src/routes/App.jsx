@@ -1,24 +1,27 @@
 import React from 'react';
+import useFetchBeers from '../hooks/useFetchBeers';
+import useFetchBlogs from '../hooks/useFetchBlogs';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../containers/Home';
-import Blog from '../containers/Blog';
 import Beers from '../containers/Beers';
+import Blogs from '../containers/Blogs';
 import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
-import useInitialState from '../hooks/useInitialState';
 
-//const API = 'https://d5ma95tc10.execute-api.sa-east-1.amazonaws.com/beers'
+
 const API = process.env.API_URL;
+const API_BLOGS = process.env.API_BLOG;
 
 const App = () => {
-   const initialState = useInitialState(API);
+   const beers = useFetchBeers(API);
+   const blogs = useFetchBlogs(API_BLOGS);
    return(
       <BrowserRouter>
          <Layout>
             <Routes>
-               <Route path="/" element={<Home />} />
-               <Route path="/blog" element={<Blog />} />
-               <Route path="/beers" element={<Beers {...initialState}/>} />
+               <Route path="/" element={<Home {...blogs}/>} />
+               <Route path="/blogs" element={<Blogs {...blogs}/>} />
+               <Route path="/beers" element={<Beers {...beers}/>} />
                <Route path="*" element={<NotFound />} />
             </Routes>
          </Layout>

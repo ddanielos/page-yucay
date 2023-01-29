@@ -9,7 +9,8 @@ import About from '../components/About';
 import OurBlog from '../components/OurBlog';
 import Footer from '../components/Footer';
 
-const Home = () => {
+const Home = (props) => {
+   const blogs = props
    const [modalOpen, setModalOpen] = useState(false);
    const [imageInstaURL, setImageInstaURL] = useState(false);
    const [imageInstaCaption, setImageInstaCaption] = useState(false);
@@ -39,7 +40,7 @@ const Home = () => {
          {modalOpen && <Modal imageInstaURL={imageInstaURL} imageInstaCaption={imageInstaCaption} typeInsta={typeInsta} closeModal={closeModal}/>}
          <Instagram openModal={openModal}/>
          <About />
-         <OurBlog />
+         <OurBlog {...blogs}/>
          <Footer />
       </div>
    )
